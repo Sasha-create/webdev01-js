@@ -36,3 +36,34 @@
 // });
 
 //indexOf/lastIndexOf/includes
+
+// arr.indexOf(item, from)
+// arr.includes(item, from)
+
+// let arr = [1, 0, false];
+// alert(arr.indexOf(0)); //1
+// alert(arr.indexOf(false)); // 2
+// alert(arr.indexOf(null)); //-1
+
+// alert(arr.includes(1)); //true
+
+// let arr = ["Bilbo", "Gandalf", "Nazgul", "Bilbo"];
+// alert(arr.indexOf("Bilbo")); //0
+// alert(arr.lastIndexOf("Bilbo")); //3
+
+//  find/findIndex/findLastIndex
+let result = arr.find(item, index, array)
+
+let users = [
+    { id: 1, name: "Bilbo" },
+    { id: 2, name: "Gandalf" },
+    { id: 3, name: "Nazgul" },
+    { id: 4, name: "Bilbo" }
+];
+
+// let user = users.find(item => item.id == 1);
+
+// alert(user.name); // Bilbo
+
+alert(users.findIndex(user => user.name == "Bilbo"));     // 0
+alert(users.findLastIndex(user => user.name == "Bilbo")); // 3
