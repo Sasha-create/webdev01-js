@@ -52,18 +52,31 @@
 // alert(arr.lastIndexOf("Bilbo")); //3
 
 //  find/findIndex/findLastIndex
-let result = arr.find(item, index, array)
+// let result = arr.find(item, index, array)
 
-let users = [
-    { id: 1, name: "Bilbo" },
-    { id: 2, name: "Gandalf" },
-    { id: 3, name: "Nazgul" },
-    { id: 4, name: "Bilbo" }
-];
+// let users = [
+//     { id: 1, name: "Bilbo" },
+//     { id: 2, name: "Gandalf" },
+//     { id: 3, name: "Nazgul" },
+//     { id: 4, name: "Bilbo" }
+// ];
 
-// let user = users.find(item => item.id == 1);
+// // let user = users.find(item => item.id == 1);
 
-// alert(user.name); // Bilbo
+// // alert(user.name); // Bilbo
 
-alert(users.findIndex(user => user.name == "Bilbo"));     // 0
-alert(users.findLastIndex(user => user.name == "Bilbo")); // 3
+// alert(users.findIndex(user => user.name == "Bilbo"));     // 0
+// alert(users.findLastIndex(user => user.name == "Bilbo")); // 3
+
+//filter
+// let users = [
+//     { id: 1, name: "Bilbo" },
+//     { id: 2, name: "Gandalf" },
+//     { id: 3, name: "Nazgul" }
+// ]
+// let someUsers = users.filter(item => item.id < 3);
+// alert(someUsers.length);   // 2
+
+//map
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+alert(lengths); //5, 7, 6
